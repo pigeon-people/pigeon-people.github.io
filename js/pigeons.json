@@ -1,0 +1,47 @@
+[
+    {
+        "id": "tara",
+        "image": "assets/pigeons/tara.svg",
+        "text": "assets/pigeons/tara.md"
+    },
+    {
+        "id": "kacperleah",
+        "image": "assets/pigeons/kacperleah.svg",
+        "text": "assets/pigeons/kacperleah.md"
+    },
+    {
+        "id": "ella1",
+        "image": "assets/pigeons/ella1.svg",
+        "text": "assets/pigeons/ella1.md"
+    },
+    {
+        "id": "ella2",
+        "image": "assets/pigeons/ella2.svg",
+        "text": "assets/pigeons/ella2.md"
+    },
+    {
+        "id": "ella4",
+        "image": "assets/pigeons/ella4.svg",
+        "text": "assets/pigeons/ella4.md"
+    },
+    {
+        "id": "ella5",
+        "image": "assets/pigeons/ella5.svg",
+        "text": "assets/pigeons/ella5.md"
+    },
+    {
+        "id": "ella6",
+        "image": "assets/pigeons/ella6.svg",
+        "text": "assets/pigeons/ella6.md"
+    },
+    {
+        "id": "ella7",
+        "image": "assets/pigeons/ella7.svg",
+        "text": "assets/pigeons/ella7.md"
+    },
+    {
+        "id": "ellahome",
+        "image": "assets/pigeons/ella8.svg",
+        "text": "assets/pigeons/ella8.md"
+    }
+]
