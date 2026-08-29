@@ -228,11 +228,31 @@ function stopDragging() {
 }
 
 
+//Zoom out
+
 world.addEventListener("pointerup", stopDragging);
 
 world.addEventListener("pointercancel", stopDragging);
 
+const invisible = document.getElementById('zoomer');
 
+const hoverDevice = window.matchMedia('(hover: hover) and (pointer: fine)');
+
+if (hoverDevice.matches) {
+    // Mouse / keyboard devices
+    invisible.addEventListener('mouseenter', () => {
+        world.classList.add('zoom');
+    });
+
+    invisible.addEventListener('mouseleave', () => {
+        world.classList.remove('zoom');
+    });
+} else {
+    // Touch devices
+    invisible.addEventListener('click', () => {
+        world.classList.toggle('zoom');
+    });
+}
 
 // darkmode
 

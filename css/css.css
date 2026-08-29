@@ -67,11 +67,21 @@ header {
 	font-size: 2.5vh;
 	margin-bottom: 2vh;
 }
-#darkmode-toggle, label img {
+#darkmode-toggle, label img, #zoomer {
 	position: fixed;
     width: 5vh;
     height: 5vh;
 	cursor: pointer;
+	right: 2vh;
+}
+#darkmode-toggle {
+	top: 2vh;
+}
+label img {
+	top: 9vh;
+}
+#zoomer {
+	top: 16vh;
 }
 hr {
   border: none;
@@ -87,6 +97,11 @@ hr {
     height: 500vh;
     cursor: grab;
     user-select: none;
+	transition: .5s;
+}
+#world.zoom {
+    width: 100vw;
+    height: 100vh;
 }
 .pigeon {
     position: absolute;
@@ -99,6 +114,13 @@ hr {
     max-height: 100%;
     pointer-events: none;
 }
+#invisible {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    height: 10vh;
+    margin: 0 25%;
+}
 #headerCheck:checked + label #popup{
 	top:0;
 }
@@ -107,7 +129,7 @@ hr {
     top: 100vh;
     left: 0;
     width: 100vw;
-    height: 100dvh;
+    height: 100vh;
 	z-index: 10;
     display: flex;
     justify-content: center;
@@ -190,14 +212,6 @@ hr {
 	to {opacity: 1; transform:scale(1);}
 }
 @media (orientation: portrait) {
-	#darkmode-toggle {
-		top: 2vh;
-		right: 2vh;
-	}
-	label img {
-		top: 9vh;
-		right: 2vh;
-	}
 	#exit  {
 		top: 1vh;
 		right: 1vh;
@@ -213,14 +227,6 @@ hr {
 	}
 }
 @media (orientation: landscape) {
-	#darkmode-toggle {
-		bottom: 2vh;
-		left: 2vh;
-	}
-	label img {
-		bottom: 2vh;
-		right: 2vh;
-	}
 	#exit  {
 		top: 2vh;
 		right: 2vh;
